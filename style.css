@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #e2c35d, #d88771);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+form input,
+form button {
+    border: none;
+    outline-style: none;
+}
+
+header {
+    margin: 20px 0px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-input {
+    width: 300px;
+    height: 30px;
+    margin: 0;
+    padding-left: 5px;
+    font-size: 25px;
+}
+
+.todo-button {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    background: #ffffff;
+    color: #b66954;
+    transition: .5s ease-in-out;
+}
+
+.todo-button:hover {
+    background: #b66954;
+    color: #ffffff;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 25px;
+    background: #ffffff;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    overflow: hidden;
+    padding-left: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.complete {
+    width: 25px;
+    height: 25px;
+    background: #008000;
+    border: none;
+    outline-style: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.delete {
+    width: 25px;
+    height: 25px;
+    background: #ff0000;
+    border: none;
+    outline-style: none;
+    color: #ffffff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-check,
+.fa-trash {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    appearance: none;
+    outline: none;
+    border: none;
+    margin-left: 20px;
+}
